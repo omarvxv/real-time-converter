@@ -1,6 +1,6 @@
 class Application {
     constructor() {
-        document.querySelectorAll('.input-block').forEach(input => input.addEventListener('input', (e) => this.input(e)));
+        document.querySelectorAll('.input-block').forEach(input => input.addEventListener('input', (e) => this.input(e, input)));
         document.querySelector('.arrow').addEventListener('click', () => this.reverseCurrency());
         window.addEventListener('load', () => this.setInitValues());
     }
@@ -78,7 +78,7 @@ class Application {
         this.setCurrency();
         this.setCalc();
     }
-    input(e) {
+    input(e, block) {
         if (e.data !== undefined && isNaN(e.data)) {
             e.target.value = this.correctInput(e.target.value);
             return;
@@ -89,7 +89,7 @@ class Application {
             }
             this.timerId = setTimeout(() => {
                 this.amount = e.target.value;
-                this.setIndex(e.currentTarget);
+                this.setIndex(block);
                 this.setCalc();
             }, 800);
         }
