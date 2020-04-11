@@ -122,6 +122,8 @@ class Application {
         const sectionTo = this.calcContainer.children[2].querySelector('.currency-line');
         const cloneFrom = sectionFrom.cloneNode(true);
         const cloneTo = sectionTo.cloneNode(true);
+        cloneFrom.querySelector('select').selectedIndex = sectionFrom.querySelector('select').selectedIndex;
+        cloneTo.querySelector('select').selectedIndex = sectionTo.querySelector('select').selectedIndex;
         sectionFrom.replaceWith(cloneTo);
         sectionTo.replaceWith(cloneFrom);
         this.blockIndex.reverse();
