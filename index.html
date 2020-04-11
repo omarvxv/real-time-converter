@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер валют онлайн</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading"><div class=screen></div><div class="button">Loading</div></div>
+    <header>
+        <div class="logo"></div>
+        <div class="header-list wrapper">
+            <ul>
+                <li><a href="#" class="active">БАНК</a></li>
+                <li><a href="#">БИЗНЕС</a></li>
+                <li><a href="#">ИНВЕСТИЦИИ</a></li>
+                <li><a href="#">СТРАХОВАНИЕ</a></li>
+                <li><a href="#">МОБАЙЛ</a></li>
+                <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+                <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+            </ul>
+        </div>
+        <button type="button" class="enter">ВОЙТИ</button>
+    </header>
+    <div class="container wrapper">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="convert">
+            <div class="input-block from">
+                <p>У меня есть</p>
+                <div class="currency-line">
+                    <ul>
+                        <li class="active">RUB</li>
+                        <li>USD</li>
+                        <li>EUR</li>
+                        <li>GBP</li>
+                        <li class="select"></li>
+                    </ul>
+                </div>
+                <div class="amount-container">
+                    <input type="text" name="currency" class="input" />
+                    <p class="value"></p>
+                </div>
+            </div>
+            <div class="arrow">
+            </div>
+            <div class="input-block to">
+                <p>Хочу приобрести</p>
+                <div class="currency-line">
+                    <ul>
+                        <li>RUB</li>
+                        <li class="active">USD</li>
+                        <li>EUR</li>
+                        <li>GBP</li>
+                        <li class="select"></li>
+                    </ul>
+                </div>
+                <div class="amount-container">
+                    <input type="text" name="currency" class="input" value="1" />
+                    <p class="value"></p>
+                </div>
+            </div>
+        </div>
+        <div class="error">Что то пошло не так. Пожалуйста повторите попытку!</div>
+    </div>
+    <script src="./dist/main.minified.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "real-time-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build:prod": "webpack --config webpack.prod.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omarvxv/real-time-converter.git"
+  },
+  "author": "Omar Valikhanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omarvxv/real-time-converter/issues"
+  },
+  "homepage": "https://github.com/omarvxv/real-time-converter#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
