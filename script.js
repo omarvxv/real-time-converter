@@ -89,7 +89,7 @@ class Application {
             }
             this.timerId = setTimeout(() => {
                 this.amount = e.target.value;
-                this.setIndex(e.path[2]);
+                this.setIndex(e.currentTarget);
                 this.setCalc();
             }, 800);
         }
